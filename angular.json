@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "misaladejuegos": {
+    "tpsaladejuegos": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/misaladejuegos",
+            "outputPath": "dist/tpsaladejuegos",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "misaladejuegos:build:production"
+              "browserTarget": "tpsaladejuegos:build:production"
             },
             "development": {
-              "browserTarget": "misaladejuegos:build:development"
+              "browserTarget": "tpsaladejuegos:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "misaladejuegos:build"
+            "browserTarget": "tpsaladejuegos:build"
           }
         },
         "test": {
