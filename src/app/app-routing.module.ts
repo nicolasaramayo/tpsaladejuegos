@@ -6,11 +6,13 @@ import { HomeComponent } from "./home/home.component";
 import { SobreMiComponent } from "./sobre-mi/sobre-mi.component";
 import { LoginComponent } from "./login/login.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  { path: 'Home', component: HomeComponent },
-  { path: 'About', component: SobreMiComponent },
-  { path: 'Login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: SobreMiComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
