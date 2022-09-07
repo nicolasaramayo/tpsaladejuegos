@@ -6,10 +6,13 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "postinstall": "ng build --output-path angularapp --aot --prod"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~14.2.1",
+    "@angular/compiler-cli": "^14.0.0",
     "@angular/animations": "^14.0.0",
     "@angular/common": "^14.0.0",
     "@angular/compiler": "^14.0.0",
@@ -20,7 +23,8 @@
     "@angular/router": "^14.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "typescript": "~4.7.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.1",
@@ -34,5 +38,9 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.7.2"
-  }
+  },
+  "engines": {
+    "node": "v16.17.0",
+    "npm": "8.15.0"
+    }
 }
