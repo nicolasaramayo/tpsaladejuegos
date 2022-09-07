@@ -1,10 +1,9 @@
 const express = require('express');
+const path = require('path');
 const app = express();
-const path = require('path'); 
-app.use(express.static(__dirname + '/angularapp'));
-app.listen(process.env.PORT || 8080);
-app.get('/*', function(req, res) {
-res.sendFile(path.join(__dirname + '/angularapp/index.html'));
-});
+app.use(express.static(__dirname + '/dist/tpsaladejuegos'));
+app.get('/*', function(req,res)
 
-console.log('Build successful!!');
+{res.sendFile(path.join(__dirname+'/dist/tpsaladejuegos/index.html'));});
+
+app.listen(process.env.PORT || 8080);
