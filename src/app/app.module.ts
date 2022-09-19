@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RegisterComponent } from './register/register.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RegisterComponent } from './register/register.component';
     LoginComponent,
     SobreMiComponent,
     PageNotFoundComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
